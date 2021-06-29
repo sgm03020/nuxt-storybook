@@ -15,8 +15,8 @@ module.exports = nuxifyStorybook({
   },
   stories: [
     // Add your stories here
-    '../src/components/**/*.stories.js',
-    '../src/components/**/*.stories.ts'
+    '../components/**/*.stories.js',
+    '../components/**/*.stories.ts'
   ],
   addons: [
     // Add your addons here

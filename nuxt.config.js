@@ -54,7 +54,7 @@ export default {
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
     theme: {
-      dark: true,
+      dark: 0,
       themes: {
         dark: {
           primary: colors.blue.darken2,
@@ -71,5 +71,17 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-  }
+  },
+  // Storybook
+  storybook: {
+    // addons: [
+    //   '@storybook/addon-notes/register',
+    //   '@storybook/preset-scss'
+    // ],
+    // decorators: [
+    //   // VApp decorator for Vuetify
+    //   '<v-app><story/></v-app>',
+    // ],
+    port: 3003,
+  },
 }
