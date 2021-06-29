@@ -1,4 +1,6 @@
 import VuetifyButton from './VuetifyButton.vue'
+import markdown from '/markdown/product.md'
+
 export default {
   title: 'VuetifyButton',
   component: VuetifyButton,
@@ -15,6 +17,9 @@ export default {
       control: 'text',
       defaultValue: 'Awesome Button',
     },
+  },
+  parameters: {
+    notes: { markdown },
   },
 }
 

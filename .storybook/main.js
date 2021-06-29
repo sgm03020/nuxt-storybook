@@ -20,5 +20,6 @@ module.exports = nuxifyStorybook({
   ],
   addons: [
     // Add your addons here
+    '@storybook/addon-notes'
   ]
 })
