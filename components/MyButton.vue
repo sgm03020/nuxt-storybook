@@ -1,3 +1,4 @@
+<!-- MyButton.vue -->
 <template>
   <!-- サンプル -->
   <!-- https://codesandbox.io/s/github/nuxt-community/storybook/tree/master/examples/addon-controls?from-embed=&file=/components/MyButton.vue:0-740 -->
@@ -7,16 +8,28 @@
 </template>
 
 <script>
+/**
+ * I'm MyButton
+ */
 export default {
   props: {
+    /**
+     * 丸み
+     */
     round: {
       type: Boolean,
       default: false,
     },
+    /**
+     * タイプ
+     */
     type: {
       type: String,
       default: 'primary',
     },
+    /**
+     * 名前
+     */
     text: {
       type: String,
       default: 'Button',

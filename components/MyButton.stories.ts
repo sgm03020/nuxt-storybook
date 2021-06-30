@@ -1,4 +1,6 @@
 import MyButton from './MyButton.vue'
+import markdown from '/markdown/productBuyButton.md'
+
 export default {
   title: 'Button',
   component: MyButton,
@@ -15,6 +17,9 @@ export default {
       control: 'text',
       defaultValue: 'Awesome Button',
     },
+  },
+  parameters: {
+    notes: { markdown },
   },
 }
 
