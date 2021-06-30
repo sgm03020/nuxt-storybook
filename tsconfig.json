@@ -20,6 +20,7 @@
   "exclude": ["node_modules", ".nuxt", "dist", "trunk"],
   "files": ["shims-vue.d.ts", "@types/md.d.ts"],
   "include": [
+    "stories/**/*.ts",
     "components/**/*.ts",
     "components/**/*.js",
     "components/**/*.vue",

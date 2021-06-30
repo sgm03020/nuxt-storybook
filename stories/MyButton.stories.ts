@@ -1,5 +1,5 @@
-import MyButton from './MyButton.vue'
-import markdown from '/markdown/productBuyButton.md'
+import MyButton from '../components/MyButton.vue'
+import markdown from '../markdown/productBuyButton.md'
 
 export default {
   title: 'Button',
