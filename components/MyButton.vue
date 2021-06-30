@@ -38,3 +38,12 @@ export default {
   },
 }
 </script>
+
+<style lang="scss" scoped>
+.block {
+  background-color: #fff;
+  &__colored { /* .block__colored に変換されます */
+    color: red;
+  }
+}
+</style>

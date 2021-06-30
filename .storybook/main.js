@@ -7,31 +7,9 @@ module.exports = nuxifyStorybook({
     //
     // https://zenn.dev/sa2knight/books/aca5d5e021dd10262bb9/viewer/e61f4f
     config.module.rules.push({
-      // test: /\.scss$/,
-      test: /\.s?css$/,
-      use: [
-        {
-          loader: 'style-loader',
-        },
-        {
-          loader: 'css-loader',
-          options: {
-            modules: {
-              mode: 'local',
-              localIdentName: '[local]_[hash:base64:5]',
-            },
-          },
-        },
-        {
-          loader: 'sass-loader',
-        },
-      ],
+      test: /\.scss$/,
+      use: ['style-loader', 'css-loader', 'sass-loader'],
       include: path.resolve(__dirname, '../'),
-    })
-    config.module.rules.push({
-      test: /\.vue$/,
-      loader: 'storybook-addon-vue-info/loader',
-      enforce: 'post',
     })
     return config
   },
