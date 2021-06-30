@@ -14,6 +14,14 @@ import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.css'
 import colors from 'vuetify/es5/util/colors'
 // import '@mdi/font/css/materialdesignicons.css'
+// 上記を使わず、.storybook/preview-head.htmlに以下の
+// 2行を追加した
+// <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900&display=swap"
+//  rel="stylesheet"
+//  />
+// <link href="https://cdn.jsdelivr.net/npm/@mdi/font@3.x/css/materialdesignicons.min.css"
+//  rel="stylesheet"
+// />
 
 const vuetifyOptions = {}
 
