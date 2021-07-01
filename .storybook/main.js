@@ -9,6 +9,7 @@ module.exports = {
     '@storybook/addon-notes',
     '@storybook/addon-docs',
     '@storybook/addon-controls',
+    '@storybook/preset-scss',
   ],
   webpackFinal: (config) => {
     config.module.rules.push({
