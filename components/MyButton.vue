@@ -5,6 +5,8 @@
   <button class="test" :class="btnClass">
     <slot>{{ text }}</slot>
   </button>
+  <!-- <div :class="$style.title">SmallComponent!</div> -->
+  <!-- <div>SmallComponent!</div> -->
 </template>
 
 <script>
@@ -52,6 +54,17 @@ export default {
 }
 </script>
 
+<!-- style moduleはstorybookでどうしても反映されない -->
+<!--
+<style module>
+.title {
+  border: dashed 2px #5b8bd0;
+  border-radius: 5px;
+  padding: 3px;
+  color: blue;
+}
+</style>
+-->
 <style lang="scss" scoped>
 .test {
   font-size: 2rem;
